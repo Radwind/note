@@ -43,7 +43,7 @@ const noteReducer = (state = {}, action) => {
 const reducer = (state = [], action) => {
   switch (action.type) {
     case ADD_NOTE:
-      return [ noteReducer(undefined, action), ...state,];
+      return [...state, noteReducer(undefined, action)];
     case DELETE_NOTE:
       const index = state.findIndex((note) => note.id === action.id);
       return [...state.slice(0, index), ...state.slice(index + 1)];
