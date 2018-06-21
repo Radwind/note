@@ -1,0 +1,10 @@
+.comment {
+  width: 90%;
+  list-style: none;
+}
+
+#date {
+  font-size: 10px;
+  margin-right: 10px;
+  text-align: end;
+}

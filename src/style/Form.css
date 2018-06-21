@@ -1,0 +1,10 @@
+.main-form {
+ position: fixed;
+ margin-top: 20px;
+}
+
+@media (max-width: 768px) { 
+  .main-form {
+    position: relative;
+  }
+}
